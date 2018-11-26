@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>SP Features</name>
+  <author>JoomShaper.com</author>
+  <creationDate>Nov 2013</creationDate>
+  <copyright>Copyright (C) 2010 - 2013 JoomShaper.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or Later</license>
+  <authorEmail>support@joomshaper.com</authorEmail>
+  <authorUrl>www.joomshaper.com</authorUrl>
+  <version>1.0</version>
+  <description>SP Features</description>
+  <files>
+    <filename module="mod_sp_features">mod_sp_features.php</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_sp_features/fields">
+
+
+      <!--Feature 1-->
+      <field name="feature1_spacer" type="spacer" label="Feature 1" />
+      <field name="icon1" type="icon" label="Icon" description="Feature Icon" />
+      <field name="title1" type="text" label="Title" description="Feature Title" />
+      <field name="desc1" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="class1" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature1_hr" type="spacer" hr="true" />
+
+      <!--Feature 2-->
+      <field name="feature2_spacer" type="spacer" label="Feature 2" />
+      <field name="icon2" type="icon" label="Icon" description="Feature Icon" />
+      <field name="title2" type="text" label="Title" description="Feature Title" />
+      <field name="desc2" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="class2" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature2_hr" type="spacer" hr="true" />
+
+       <!--Feature 3-->
+      <field name="feature3_spacer" type="spacer" label="Feature 3" />
+      <field name="icon3" type="icon" label="Icon" description="Feature Icon" />
+      <field name="title3" type="text" label="Title" description="Feature Title" />
+      <field name="desc3" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="class3" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature3_hr" type="spacer" hr="true" />
+
+
+       <!--Feature 4-->
+      <field name="feature4_spacer" type="spacer" label="Feature 4" />
+      <field name="icon4" type="icon" label="Icon" description="Feature Icon" />
+      <field name="title4" type="text" label="Title" description="Feature Title" />
+      <field name="desc4" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="class4" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature4_hr" type="spacer" hr="true" />
+
+
+
+
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" /> 
+        <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache" type="hidden" default="1" />
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+        <field name="cachemode" type="hidden" default="itemid">
+         <option value="itemid"></option>
+       </field>
+     </fieldset>
+   </fields>
+ </config>
+</extension>

@@ -1,0 +1,139 @@
+#comingsoon{
+	text-align: center;
+	margin: 60px 0;
+}
+
+#comingsoon #logo{
+	background: url(../images/logo.png) no-repeat 50% 0;
+	height: 60px;
+ 	width: 131px;
+  	padding: 0;
+  	margin: 0 auto 50px;
+  	text-indent: -9999em;
+  	display: inline-block;
+}
+
+#comingsoon .comingsoon-title{
+	margin: 0 0 50px;
+}
+
+#comingsoon .comingsoon-countdown{
+	margin: 0 0 100px;
+}
+
+#comingsoon .comingsoon-countdown .days,
+#comingsoon .comingsoon-countdown .hours,
+#comingsoon .comingsoon-countdown .minutes,
+#comingsoon .comingsoon-countdown .seconds{
+	background: #27ae60;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+#comingsoon .comingsoon-countdown span.number{
+	padding: 0 15px;
+	width: 125px;
+	height: 110px;
+	line-height: 110px;
+	display: inline-block;
+	font-size: 60px;
+	font-weight: 700;
+	background: #f6f6f6;
+	border-radius: 4px;
+}
+
+#comingsoon .comingsoon-countdown span.string{
+	padding: 10px;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: lowercase;
+	text-shadow:1px 1px 4px rgba(0,0,0,.3);
+	color: #fff;
+}
+
+#comingsoon .comingsoon-content{
+	margin: 0 0 50px;
+	font-size: 18px;
+	font-weight: 300;
+	max-width: 850px;
+	display: inline-block;
+}
+
+#comingsoon .social-media{
+	background: #e6e6e6;
+}
+
+#comingsoon .social-icons{
+	list-style: none;
+	margin: 0;
+	padding: 50px 0;
+
+}
+#comingsoon .social-icons li{
+	display: inline-block;
+}
+#comingsoon .social-icons li a:hover{
+	text-decoration: none;
+}
+
+#comingsoon .social-icons li i{
+	margin-right: 25px;
+	width:40px;
+	height:40px;
+	display:inline-block;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 100;	
+	border-radius: 2px;
+	position: relative;
+}
+
+#comingsoon .social-icons li i:after{
+	content: " ";
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	padding: 0 5px;
+}
+
+#comingsoon .social-icons li i.icon-facebook{
+	background: #5d82d1;
+}
+#comingsoon .social-icons li i.icon-facebook:after{
+	box-shadow: -5px 8px 7px 1px #5d82d1;
+}
+
+#comingsoon .social-icons li i.icon-twitter{
+	background: #40bff5;
+}
+#comingsoon .social-icons li i.icon-twitter:after{
+	box-shadow: -5px 8px 7px 1px #40bff5;
+}
+
+#comingsoon .social-icons li i.icon-google-plus{
+	background: #eb5e4c;
+}
+#comingsoon .social-icons li i.icon-google-plus:after{
+	box-shadow: -5px 8px 7px 1px #eb5e4c;
+}
+
+#comingsoon .social-icons li i.icon-pinterest{
+	background: #e13138;
+}
+#comingsoon .social-icons li i.icon-pinterest:after{
+	box-shadow: -5px 8px 7px 1px #e13138;
+}
+
+#comingsoon .social-icons li i.icon-dribbble{
+	background: #d77fa9;
+}
+#comingsoon .social-icons li i.icon-dribbble:after{
+	box-shadow: -5px 8px 7px 1px #d77fa9;
+}

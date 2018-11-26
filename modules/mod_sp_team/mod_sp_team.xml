@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>SP Team</name>
+	<author>JoomShaper.com</author>
+	<creationDate>Nov 2013</creationDate>
+	<copyright>Copyright (C) 2010 - 2013 JoomShaper. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>support@joomshaper.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>1.0</version>
+	<description>SP Team</description>
+	<files>
+		<filename module="mod_sp_team">mod_sp_team.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<!--Team Member 1-->
+				<field name="team1_spacer" type="spacer" label="Team 1" />
+				<field name="team1_img" type="media" label="Image" description="Image of Team Member" />
+				<field name="team1_name" type="text" label="Name" description="Name of Team Member" />
+				<field name="team1_desg" type="text" label="Designation" description="Designation of Team Member" />
+				<field name="team1_desc" type="text" label="Description" description="Description of Team Member" />
+				<field name="team1_facebook" type="text" label="Facebook Url" description="Url of Facebook" />
+				<field name="team1_twitter" type="text" label="Twitter Url" description="Url of Twitter" />
+				<field name="team1_googleplus" type="text" label="Google Plus Url" description="Url of Google Plus" />
+				<field name="team1_pinterest" type="text" label="Pinterest Url" description="Url of Pinterest" />
+				<field name="team1_linkedin" type="text" label="Linkedin Url" description="Url of Linkedin" />
+				<field name="team1_hr" type="spacer" hr="true" />
+
+				<!--Team Member 2-->
+				<field name="team2_spacer" type="spacer" label="Team 2" />
+				<field name="team2_img" type="media" label="Image" description="Image of Team Member" />
+				<field name="team2_name" type="text" label="Name" description="Name of Team Member" />
+				<field name="team2_desg" type="text" label="Designation" description="Designation of Team Member" />
+				<field name="team2_desc" type="text" label="Description" description="Description of Team Member" />
+				<field name="team2_facebook" type="text" label="Facebook Url" description="Url of Facebook" />
+				<field name="team2_twitter" type="text" label="Twitter Url" description="Url of Twitter" />
+				<field name="team2_googleplus" type="text" label="Google Plus Url" description="Url of Google Plus" />
+				<field name="team2_pinterest" type="text" label="Pinterest Url" description="Url of Pinterest" />
+				<field name="team2_linkedin" type="text" label="Linkedin Url" description="Url of Linkedin" />
+				<field name="team2_hr" type="spacer" hr="true" />
+
+				<!--Team Member 3-->
+				<field name="team3_spacer" type="spacer" label="Team 3" />
+				<field name="team3_img" type="media" label="Image" description="Image of Team Member" />
+				<field name="team3_name" type="text" label="Name" description="Name of Team Member" />
+				<field name="team3_desg" type="text" label="Designation" description="Designation of Team Member" />
+				<field name="team3_desc" type="text" label="Description" description="Description of Team Member" />
+				<field name="team3_facebook" type="text" label="Facebook Url" description="Url of Facebook" />
+				<field name="team3_twitter" type="text" label="Twitter Url" description="Url of Twitter" />
+				<field name="team3_googleplus" type="text" label="Google Plus Url" description="Url of Google Plus" />
+				<field name="team3_pinterest" type="text" label="Pinterest Url" description="Url of Pinterest" />
+				<field name="team3_linkedin" type="text" label="Linkedin Url" description="Url of Linkedin" />
+				<field name="team3_hr" type="spacer" hr="true" />
+
+				<!--Team Member 4-->
+				<field name="team4_spacer" type="spacer" label="Team 4" />
+				<field name="team4_img" type="media" label="Image" description="Image of Team Member" />
+				<field name="team4_name" type="text" label="Name" description="Name of Team Member" />
+				<field name="team4_desg" type="text" label="Designation" description="Designation of Team Member" />
+				<field name="team4_desc" type="text" label="Description" description="Description of Team Member" />
+				<field name="team4_facebook" type="text" label="Facebook Url" description="Url of Facebook" />
+				<field name="team4_twitter" type="text" label="Twitter Url" description="Url of Twitter" />
+				<field name="team4_googleplus" type="text" label="Google Plus Url" description="Url of Google Plus" />
+				<field name="team4_pinterest" type="text" label="Pinterest Url" description="Url of Pinterest" />
+				<field name="team4_linkedin" type="text" label="Linkedin Url" description="Url of Linkedin" />
+				<field name="team4_hr" type="spacer" hr="true" />
+
+	
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

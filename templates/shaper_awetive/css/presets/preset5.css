@@ -1,0 +1,214 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  color: #f39c12;
+}
+a:hover {
+  color: #c87f0a;
+}
+body {
+  color: #656565;
+}
+body.bg {
+  background: #f0ece1;
+}
+.btn.btn-primary,
+.readmore,
+a.ns2-readmore,
+.btn-default,
+#community-wrap .btn,
+button,
+input[type="submit"] {
+  background: #f39c12;
+}
+.btn.btn-primary:hover,
+.readmore:hover,
+a.ns2-readmore:hover,
+.btn-default:hover,
+#community-wrap .btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: #c87f0a;
+}
+#sp-header-wrapper #header {
+  background: #ffffff;
+}
+.logo {
+  background-image: url(../../images/presets/preset5/logo.png);
+}
+#sp-top-info ul.social-icons i:hover {
+  background: #363948;
+}
+#menu {
+  background: #363948;
+}
+#sp-main-menu li li:not(.sp-menu-group):hover,
+#sp-main-menu li li:not(.sp-menu-group).active {
+  background-color: #f39c12;
+}
+.sp-submenu .sp-submenu-wrap {
+  background: #363948;
+}
+#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .sp-slider-content {
+  background: #f39c12;
+}
+#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .sp-slider-content:after {
+  border-left: 400px solid #f39c12;
+}
+#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout h1.sp-title {
+  color: #f39c12;
+}
+#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .slide-indicators li {
+  background: #f39c12;
+}
+#sp-feature-wrapper #sp-feature {
+  background: #ffffff;
+}
+#sp-feature-wrapper .features .sp-feature i {
+  background: #f39c12;
+}
+.sptab {
+  background: #ffffff;
+}
+.sptab ul.nav-tabs {
+  background: #f39c12;
+}
+.sptab ul.nav-tabs li.active a {
+  color: #f39c12;
+}
+.awetive-layout:after {
+  background: #f39c12;
+}
+.recent-work .ns2-column > div {
+  background: #ffffff;
+}
+.recent-work .ns2-inner-image-wrapper a.ns2-readmore {
+  background: #363948;
+}
+.recent-work .ns2-inner-image-wrapper:hover .img-overlay {
+  background: #f39c12;
+}
+.recent-work a.prev,
+.recent-work a.next {
+  background: #f39c12;
+}
+.recent-work a.prev:hover,
+.recent-work a.next:hover {
+  background: #c87f0a;
+}
+.recent-work h3.ns2-title a {
+  color: #656565;
+}
+.clients {
+  background: #ffffff;
+}
+#sp-bottom-wrapper #bottom {
+  border-top: 4px solid #f39c12;
+  background: #363948;
+}
+#sp-footer-wrapper ul.nav li a:hover {
+  background: none;
+  color: #f39c12;
+}
+#sp-footer-wrapper .sp-totop i {
+  font-size: 24px;
+  color: #f39c12;
+}
+.blog-info-wrapper {
+  background: #363948;
+}
+div.catItemCategory,
+div.userItemCategory,
+div.tagItemCategory,
+div.itemCategory {
+  background: #f39c12;
+}
+.pagination ul li a:hover,
+.pagination ul li a.active,
+.pagination ul>li:last-child>a {
+  background: #f39c12 !important;
+  color: #fff;
+}
+.pagination ul li.pagination-active a,
+div.itemComments ul.itemCommentsList li span.commentDate,
+div.itemComments ul.itemCommentsList li span.commentLink a {
+  background: #f39c12 !important;
+}
+div.k2ItemsBlock ul li a,
+div.catItemHeader h3.catItemTitle a,
+div.userItemHeader h3.userItemTitle a,
+h2.tagItemTitle a {
+  color: #656565;
+}
+div.k2CategoriesListBlock ul li a,
+div.k2ItemsBlock ul li a,
+div.k2ArchivesBlock ul li a {
+  color: #656565;
+}
+div.k2CategoriesListBlock ul li a:hover,
+div.k2ItemsBlock ul li a:hover,
+div.k2ArchivesBlock ul li a:hover {
+  color: #f39c12;
+}
+div.k2CategoriesListBlock ul li.activeCategory a,
+div.itemComments h3.itemCommentsCounter,
+div.itemCommentsForm h3 {
+  color: #f39c12;
+}
+div.k2TagCloudBlock a {
+  background: #d9d9d9;
+  color: #656565;
+}
+div.k2TagCloudBlock a:hover {
+  background: #363948;
+  color: #fff;
+}
+.money-back {
+  border-left: 2px solid #f39c12;
+}
+ul.sp-portfolio-filter li a.btn.active {
+  background-color: #f39c12 !important;
+}
+.item-page .sp-portfolio .sp-portfolio-item-details h4.item-title {
+  margin-bottom: 0;
+}
+.item-page .sp-portfolio .sp-portfolio-item-details h4.item-title a {
+  color: #656565 !important;
+}
+.item-page .sp-portfolio .sp-portfolio-item-details a {
+  color: #f39c12;
+}
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover,
+.nav-pills>.active>a:focus {
+  background: #f39c12;
+}
+.highlighted {
+  background: #f39c12;
+  color: #fff;
+}
