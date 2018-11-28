@@ -1,6 +1,0 @@
-<strong>Unhandled PropelException</strong>  [wrapped: Could not connect [User Info: host=192.168.105.102 dbname='gforge5' user='gforge' password='*********'] [User Info: Array]]<br /><pre>#0 /opt/gforge.git/lib/core/om/BaseLanguagePeer.php(203): Propel::getConnection('gf5')
-#1 /opt/gforge.git/lib/core/om/BaseLanguagePeer.php(183): BaseLanguagePeer::doSelectRS(Object(Criteria), NULL)
-#2 /opt/gforge.git/lib/core/om/BaseLanguagePeer.php(165): BaseLanguagePeer::doSelect(Object(Criteria), NULL)
-#3 /opt/gforge.git/lib/session/Session.php(139): BaseLanguagePeer::doSelectOne(Object(Criteria))
-#4 /opt/gforge.git/www/gf.php(170): Session->getLanguage()
-#5 {main}</pre>
