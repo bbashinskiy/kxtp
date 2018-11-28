@@ -12,9 +12,9 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'kxtfkpiua';
-	public $password = 'wCKDwRJFkhxCw7v';
+	public $host = 'db';
+	public $user = 'root';
+	public $password = 'admingenerydey';
 	public $db = 'kxtfkpiua';
 	public $dbprefix = 'pgij5_';
 	public $live_site = '';
@@ -22,10 +22,10 @@ class JConfig {
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
-	public $ftp_host = 'kxtp.kpi.ua';
-	public $ftp_port = '21';
-	public $ftp_user = 'kxtfkpiua';
-	public $ftp_pass = '3SBPkrRR3x2F2B9';
+	public $ftp_host = '';
+	public $ftp_port = '';
+	public $ftp_user = '';
+	public $ftp_pass = '';
 	public $ftp_root = '';
 	public $ftp_enable = '0';
 	public $offset = 'UTC';
@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/var/www/kxtp.kpi.ua/logs';
-	public $tmp_path = '/var/www/kxtp.kpi.ua/tmp';
+	public $log_path = '/var/www/html/logs';
+	public $tmp_path = '/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = '';
