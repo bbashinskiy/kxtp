@@ -1,0 +1,412 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+.responsive {
+
+	/* Small desktop */
+	@media (min-width: 980px) and (max-width: 1199px) { 
+
+		#sp-main-menu ul.level-0 > li{
+			margin-right: 10px;
+			>a{
+				font-size: 14px;
+			}
+		}
+
+		//tab
+		.sptab{
+			.tab-content h2{
+				font-size: 18px;
+			}
+			.tab-item-content{
+				width: 215px;
+			}
+			.img-wrapper:after{
+				border-left: 400px solid #fff;
+				border-bottom: 400px solid transparent;
+			}
+		}
+
+		//newsletter
+		.newsletter .acymailing_form >p {
+			margin: 5px 0;
+		}
+
+		//right
+		#sp-right .module .mod-wrapper h2.module-title, 
+		#sp-left .module .mod-wrapper h2.module-title{
+			font-size: 20px;
+		}
+
+	}
+
+
+	/* Portrait tablet to landscape and desktop */
+	@media (min-width: 768px) and (max-width: 979px) {
+
+
+		//top-info
+		#sp-top-info ul.social-icons{
+			margin: 10px 5px;
+			i{
+				width: 28px;
+				height: 38px;
+				line-height: 38px;
+			}
+		}
+
+		#menu #sp-menu {
+			padding: 0 30px;
+		}
+
+		//slideshow
+		#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout{
+			h2.sp-posttitle{
+				font-size: 32px;
+			}
+		}
+
+		//feature
+		#sp-feature-wrapper .features .sp-feature{
+			padding: 15px 0 15px 0;
+		}
+
+		//tab
+		.sptab {
+			ul.nav-tabs li a{
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.tab-item-content{
+				width: 170px;
+				h2{
+					font-size: 16px;
+					margin: 0;
+				}
+				p{
+					font-size: 12px;
+					margin: 0;
+				}
+			}
+			.img-wrapper:after{
+				border-left: 350px solid #fff;
+			}
+		}
+
+		//sidebar
+		#sp-right{
+			.media-body{
+				overflow: visible;
+			}
+			h2.module-title{
+				font-size: 16px !important;
+				padding: 5px 20px !important;
+			}
+		}
+		.newsletter{
+			input[type="text"]{
+				width: 95% !important;
+			}
+			h2.module-title{
+				line-height: 26px;
+			}
+			.acymailing_form >p{
+				margin: 5px;
+			}
+		}
+
+		//bottom
+		img.sp_simple_gallery{
+			margin: 0 5px 5px 0;
+		}
+
+		//about us
+		.sp-team .sp-member{
+			.social-icons{
+				right: -15px;
+			}
+		}
+
+		//service
+		.features .sp-feature{
+			padding: 0 0 15px 0;
+			h3{
+				font-size: 16px;
+			}
+		}
+		.testimonial-subpage .testimonial-wrapper 
+		.testimonial-info{
+			margin-left: -100px;
+		}
+
+
+	}
+	/* Portrait tablet to landscape and desktop */
+
+	/* Mobile Standard */
+
+	@media (max-width:767px) {
+
+		&.bg {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		 .container {
+			padding:0 10px;
+			max-width:480px;
+			min-width:280px;
+		}
+
+		//mobile menu
+		#menu #sp-menu{
+			padding: 0 15px;
+		}
+
+		//search
+		#sp-search .search {
+			margin: -10px 15px;
+			text-align: right;
+		}
+		.search #mod-search-searchword{
+			width: 50%;
+		}
+		
+
+		//header
+		#sp-header-wrapper{
+			#sp-logo{
+				width: auto;
+				float: left;
+			}
+			.logo {
+				width: 125px!important;
+				background-size: contain!important;
+			}
+		}
+
+		//slideshow
+		#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout {
+			h1.sp-title, h2.sp-posttitle{
+				font-size: 16px !important;
+				line-height: 20px;
+			}
+			p.sp-introtext{
+				font-size: 13px;
+				line-height: 16px;
+			}
+			a.btn-more{
+				font-size: 12px;
+				padding: 6px 10px;
+			}
+
+		}
+
+		//features
+		#sp-feature-wrapper .features .sp-feature{
+			border-right: 0;
+		}
+
+		//feature tab
+		.sptab {
+			ul.nav-tabs li a{
+				padding-top: 13px;
+				padding-bottom: 13px;
+			}
+			.tab-item-content{
+				width: 170px;
+				h2{
+					font-size: 16px;
+					margin: 0;
+				}
+				p{
+					font-size: 12px;
+					line-height: 14px;
+					margin: 0;
+				}
+			}
+			.img-wrapper:after{
+				border-left: 350px solid #fff;
+			}
+		}
+
+		//recent work
+		.recent-work{
+			.ns2-column{
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.clients{
+			margin-bottom: 20px;
+			.ns2-column{
+				width: 25%;
+				float:left;
+				>div{
+					margin: 0 5px 5px 0;
+				}
+			}
+		}
+
+		//bottom
+		#sp-bottom-wrapper{
+			#sp-bottom1, 
+			#sp-bottom2, 
+			#sp-bottom3, 
+			#sp-bottom4{
+				width: 50%;
+				float: left;
+				margin: 0 0 15px 0;
+			}
+			img.sp_simple_gallery {
+				margin: 0 5px 5px 0;
+			}
+		}
+
+		//subpage
+		#sp-subheader{
+			float: left;
+			position: relative;
+		}
+		ul.breadcrumb{
+			margin: -50px 0;
+		}
+
+		//about us
+		.sp-team .sp-member{
+			.social-icons{
+				right: 63px;
+			}
+		}
+
+		//portfolio
+		div.default .col-4 {
+			width: 50%;
+		}
+
+		//pricing
+		.sp-pricing ul.plan{
+			margin-bottom: 20px;
+		}
+
+		#sp-message-area{
+			border-right: 0 !important;
+		}
+
+
+
+	}
+	/* Mobile Standard end */
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+
+		//header
+		#sp-header-wrapper{
+			.logo {
+				width: 100px!important;
+				background-size: contain!important;
+			}
+
+			#sp-top-info ul.social-icons{
+				margin-top: 20px;
+				i{
+					width: 32px;
+					height: 32px;
+					line-height: 32px;
+					font-size: 16px;
+				}
+			}
+		}
+
+		//slideshow
+		#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .sp-slider-content{
+			width: 50%;
+			&:after{
+				border-left: 0;
+			}
+		}
+
+		//feature tab
+		.sptab {
+			ul.nav-tabs li a{
+				font-size: 14px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			.img-wrapper:after {
+				border-left: 325px solid #fff;
+				border-bottom: 285px solid transparent;
+			}
+		}
+		
+		.sp-team .sp-member .social-icons {
+			right: -15px;
+		}
+
+		//portfolio
+		ul.sp-portfolio-filter li a.btn{
+			font-size: 12px;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		div.default .col-4 {
+			width: 100%;
+		}
+
+		#sp-subheader h2{
+			font-size: 14px !important;
+		}
+
+
+
+	}
+
+	/* Landscape phones and down end */
+
+
+	/* Iphone */
+	@media (max-width: 320px){
+
+		//header
+		#sp-header-wrapper{
+			.logo {
+				width: 80px!important;
+				background-size: contain!important;
+			}
+			#sp-top-info ul.social-icons{
+				margin-top: 25px;
+				i{
+					width: 22px;
+					height: 22px;
+					line-height: 22px;
+					font-size: 12px;
+				}
+			}
+		}
+
+		//slideshow
+		#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .sp-slider-content {
+			padding: 20px 8px 0 30px;
+		}
+		//sptab
+		.sptab{
+			display: none;
+		}
+
+		//sub-page
+		
+
+
+		
+
+
+	}
+	/* Iphone end */
+
+}
+/*-- Responsive End --*/

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>SP Testimonial</name>
+	<author>JoomShaper.com</author>
+	<creationDate>Aug 2013</creationDate>
+	<copyright>Copyright (C) 2010 - 2013 JoomShaper. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>support@joomshaper.com</authorEmail>
+	<authorUrl>www.joomshaper.com</authorUrl>
+	<version>1.0</version>
+	<description>Testiomonial Module for Appico Template</description>
+	<files>
+		<filename module="mod_sp_testimonial">mod_sp_testimonial.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!--Testimonial 1-->
+				<field name="testimonial1_spacer" type="spacer" label="Testimonial 1" />
+				<field name="testimonial1_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial1_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial1_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial1_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial1_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial1_hr" type="spacer" hr="true" />
+
+				<!--Testimonial 2-->
+				<field name="testimonial2_spacer" type="spacer" label="Testimonial 2" />
+				<field name="testimonial2_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial2_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial2_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial2_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial2_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial2_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 3-->
+				<field name="testimonial3_spacer" type="spacer" label="Testimonial 3" />
+				<field name="testimonial3_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial3_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial3_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial3_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial3_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial3_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 4-->
+				<field name="testimonial4_spacer" type="spacer" label="Testimonial 4" />
+				<field name="testimonial4_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial4_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial4_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial4_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial4_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial4_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 5-->
+				<field name="testimonial5_spacer" type="spacer" label="Testimonial 5" />
+				<field name="testimonial5_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial5_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial5_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial5_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial5_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial5_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 6-->
+				<field name="testimonial6_spacer" type="spacer" label="Testimonial 6" />
+				<field name="testimonial6_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial6_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial6_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial6_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial6_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial6_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 7-->
+				<field name="testimonial7_spacer" type="spacer" label="Testimonial 7" />
+				<field name="testimonial7_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial7_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial7_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial7_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial7_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial7_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 8-->
+				<field name="testimonial8_spacer" type="spacer" label="Testimonial 8" />
+				<field name="testimonial8_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial8_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial8_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial8_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial8_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial8_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 9-->
+				<field name="testimonial9_spacer" type="spacer" label="Testimonial 9" />
+				<field name="testimonial9_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial9_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial9_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial9_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial9_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial9_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 10-->
+				<field name="testimonial10_spacer" type="spacer" label="Testimonial 10" />
+				<field name="testimonial10_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial10_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial10_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial10_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial10_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial10_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 11-->
+				<field name="testimonial11_spacer" type="spacer" label="Testimonial 11" />
+				<field name="testimonial11_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial11_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial11_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial11_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial11_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial11_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 12-->
+				<field name="testimonial12_spacer" type="spacer" label="Testimonial 12" />
+				<field name="testimonial12_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial12_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial12_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial12_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial12_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial12_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 13-->
+				<field name="testimonial13_spacer" type="spacer" label="Testimonial 13" />
+				<field name="testimonial13_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial13_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial13_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial13_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial13_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial13_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 14-->
+				<field name="testimonial14_spacer" type="spacer" label="Testimonial 14" />
+				<field name="testimonial14_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial14_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial14_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial14_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial14_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial14_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 15-->
+				<field name="testimonial15_spacer" type="spacer" label="Testimonial 15" />
+				<field name="testimonial15_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial15_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial15_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial15_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial15_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial15_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 16-->
+				<field name="testimonial16_spacer" type="spacer" label="Testimonial 16" />
+				<field name="testimonial16_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial16_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial16_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial16_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial16_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial16_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 17-->
+				<field name="testimonial17_spacer" type="spacer" label="Testimonial 17" />
+				<field name="testimonial17_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial17_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial17_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial17_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial17_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial17_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 18-->
+				<field name="testimonial18_spacer" type="spacer" label="Testimonial 18" />
+				<field name="testimonial18_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial18_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial18_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial18_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial18_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial18_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 19-->
+				<field name="testimonial19_spacer" type="spacer" label="Testimonial 19" />
+				<field name="testimonial19_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial19_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial19_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial19_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial19_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial19_hr" type="spacer" hr="true" />
+				
+				<!--Testimonial 19-->
+				<field name="testimonial20_spacer" type="spacer" label="Testimonial 20" />
+				<field name="testimonial20_name" type="text" label="Name" description="Name of the client, eg. John" />
+				<field name="testimonial20_designation" type="text" label="Designation" description="Designation of the Client, eg. CEO" />
+				<field name="testimonial20_testimonial" type="textarea" label="Testimonial" description="Testimonial of the Client" />
+				<field name="testimonial20_logo" type="media" label="Logo" description="Company Logo" />
+				<field name="testimonial20_avatar" type="media" label="Avatar" description="Avatar of the client" />
+				<field name="testimonial20_hr" type="spacer" hr="true" />
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

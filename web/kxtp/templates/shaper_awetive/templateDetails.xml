@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site" method="upgrade">
+    <name>shaper_awetive</name>
+    <creationDate>Dec 2013</creationDate>
+    <author>JoomShaper.com</author>
+    <authorEmail>support@joomshaper.com</authorEmail>
+    <authorUrl>http://www.joomshaper.com</authorUrl>
+    <copyright>Copyright (C) 2010 - 2013 JoomShaper.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+    <version>1.0</version>
+    <description>
+		<![CDATA[
+			Shaper Awetive is a clean, modern and responsive joomla corporate template. The theme was created to make it professionals mind - such or corporate, business, online showcase or multipurpose website. 
+           Awetive is packed to the brim with great features like SP Smart Slider, SP Features, SP Portfolio, SP Testimonial and so on. 
+           This awesome responsive template comes with 6 presets style and many ready pages - like Company page, Coming soon page, Service page. K2 used for blog feature and styled beautifully. This easy to customize template has developed with Helix V2 framework. 
+			<h3>Key Features</h3>
+			<ul class="arrow">
+				<li>Unlimited module positions with the power of unique layout builder</li>
+				<li>Powered by Bootstrap and compatible with Joomla 2.5 and 3.0</li>
+				<li>Six (6) presets with presets manager</li>
+				<li>Uses latest web technologies like html5 and css3</li>
+				<li>Tons of shortcodes in built</li>
+				<li>Built with LESS CSS</li>
+				<li>Megamenu, RTL Support, CSS and JS compression and many more...</li>
+			</ul>
+		]]>
+	</description>
+    <languages>
+        <language tag="en-GB">en-GB.tpl_shaper_awetive.ini</language>
+    </languages>
+    <positions>
+        <position>logo</position>
+        <position>top-info</position>        
+        <position>menu</position>
+        <position>search</position>
+        <position>subheader</position>        
+        <position>breadcrumb</position>
+        <position>content-top</position>        
+        <position>slide</position>
+        <position>feature</position>
+        <position>user1</position>
+        <position>user2</position>
+        <position>user3</position>
+        <position>user4</position>
+        <position>portfolio</position>
+        <position>left</position>
+        <position>content</position>
+        <position>right</position>
+        <position>bottom1</position>
+        <position>bottom2</position>
+        <position>bottom3</position>
+        <position>bottom4</position>
+        <position>bottom5</position>
+        <position>footer1</position>
+        <position>footer2</position>
+    </positions>
+	
+    <files>
+        <file>index.html</file>
+        <file>index.php</file>
+        <file>favicon.ico</file>
+        <file>template_preview.png</file>
+        <file>template_thumbnail.png</file>
+        <file>templateDetails.xml</file>
+        <file>error.php</file>
+        <file>offline.php</file>
+        <file>component.php</file>
+        <folder>css/</folder>
+        <folder>features/</folder>
+        <folder>html/</folder>
+        <folder>images/</folder>
+        <folder>js/</folder>
+        <folder>layout/</folder>
+        <folder>less/</folder>
+    </files>
+    <config>
+        <fields name="params">
+
+            <fieldset name="overviews" addfieldpath="/plugins/system/helix/fields">
+                <field type="asset" />
+                <field type="include" file="overview.php" />
+            </fieldset>
+
+            <fieldset name="basic" addfieldpath="/plugins/system/helix/fields">
+			
+				<field type="group" title="LAYOUT" />
+				 <!-- layout type -->
+                <field name="layout_width" type="list" default="1170" label="WIDTH">
+                    <option value="1170">1170 (px)</option>
+                    <option value="940">940 (px)</option>
+                </field>
+				<field name="layout_type" type="radio" default="responsive" label="TYPE">
+                    <option value="responsive">Responsive</option>
+                    <option value="fixed">Fixed</option>
+                </field>
+
+                <field type="group" title="LOGO" />
+				<!-- logo type -->
+                <field name="logo_type" class="parent logotype" type="radio" default="image" label="TYPE">
+                    <option value="image">Image</option>
+                    <option value="text">Text</option>
+                    <option value="no">None</option>
+                </field>
+                <field name="logo_position" class="child logotype logotype_image logotype_text" type="modpos" default="logo" client_id="0" label="POSITION" maxlength="50" />
+
+                <!-- logo image -->
+                <field name="logo_type_image" class="child logotype logotype_image" type="media" preview="true" label="IMAGE" />
+
+                <!-- logo text -->
+                <field name="logo_type_text" class="child logotype logotype_text" type="text" default="Helix" label="TEXT" />
+                <field name="logo_type_slogan" class="child logotype logotype_text" type="text" default="Joomla! Templates Framework" label="SLOGAN" />
+
+                <!-- logo width, height -->
+                <field name="logo_width" size="40" class="child logotype logotype_image logotype_text logotype_css" type="text" default="131" label="WIDTH" />
+                <field name="logo_height" size="40" class="child logotype logotype_image logotype_text logotype_css" type="text" default="67" label="HEIGHT" />
+
+                <!-- Footer -->
+				<field type="group" title="FOOTER" />
+				<field name="footer_position" type="modpos" default="footer1" client_id="0" label="POSITION" maxlength="50" />
+				
+				<field name="showcp" type="radio" class="parent copyright" default="1" label="COPYRIGHT">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+                <field name="copyright" class="child copyright copyright_1" type="textarea" rows="6" cols="30" default="Copyright ©  {year} Shaper Awetive Demo. All Rights Reserved." label="TEXT" />
+				
+                <field name="show_helix_logo" type="radio" default="1" label="HELIX_LOGO">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+				
+                <field name="jcredit" type="radio" default="1" label="JCREDIT">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+				
+                <field type="group" title="Brand Info" />
+				<field name="credit_link" type="radio" default="1" label="CREDIT_TEXT" class="parent credit_text">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+				<field name="credit_text" class="child credit_text credit_text_1" type="textarea" rows="6" cols="30" default="Designed by {JoomShaper}" label="TEXT" filter="raw" />
+				
+                <field name="validator" type="radio" default="0" label="VALIDATOR">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+				
+				<field type="group" title="Goto Top Settings" />
+				<field name="showtop" type="radio" default="1" label="GOTO_TOP" class="parent totop">
+                    <option value="0">Hide</option>
+                    <option value="1">Show</option>
+                </field>
+				<field name="totop_position" type="modpos" class="child totop totop_1" default="footer2" client_id="0" label="POSITION" maxlength="50" />
+
+                <field type="group" title="Social" />
+                <field name="social_position" type="modpos" default="" client_id="0" label="POSITION" maxlength="50" />
+                <field name="facebook" type="text" label="Facebook Url" description="Url of Facebook" />
+                <field name="twitter" type="text" label="Twitter Url" description="Url of Twitter" />
+                <field name="googleplus" type="text" label="Google Plus Url" description="Url of Google Plus" />
+                <field name="pinterest" type="text" label="Pinterest Url" description="Url of Pinterest" />
+                <field name="linkedin" type="text" label="Linkedin Url" description="Url of Linkedin" />
+                <field name="dribbble" type="text" label="Dribbble Url" description="Url of Dribbble" />
+                <field name="youtube" type="text" label="Youtube Url" description="Url of Youtube" />
+                <field name="skype" type="text" label="Skype Url" description="Url of Skype" />
+                <field name="flickr" type="text" label="Flickr Url" description="Url of Flickr" />
+
+                <field type="group" title="Coming Soon" />
+                <field name="comingsoon_title" type="text" default="Coming Soon Title" label="Title" />
+                <field name="comingsoon_day" type="list" default="01" label="Date">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </field> 
+                <field name="comingsoon_month" type="list" default="01" label="Month">
+                    <option value="01">JANUARY</option>
+                    <option value="02">FEBRUARY</option>
+                    <option value="03">MARCH</option>
+                    <option value="04">APRIL</option>
+                    <option value="05">MAY</option>
+                    <option value="06">JUNE</option>
+                    <option value="07">JULY</option>
+                    <option value="08">AUGUST</option>
+                    <option value="09">SEPTEMBER</option>
+                    <option value="10">OCTOBER</option>
+                    <option value="11">NOVEMBER</option>
+                    <option value="12">DECEMBER</option>
+                </field>    
+                <field name="comingsoon_year" type="text" default="2030" size="40" label="Year" />
+                <field name="comingsoon_content" type="editor" default="Coming soon content" label="Content" />
+             
+            </fieldset>
+			 <!--End Basic Tab-->
+			 
+            <fieldset name="preset"  addfieldpath="/plugins/system/helix/fields">
+                <field type="group" title="PRESET" />
+
+                <field name="preset" type="presets"  default="preset1" label="PRESET" />
+
+                <field type="group" title="PRESET_SETTINGS" />
+				
+				<!--Start Preset1-->
+                <field name="preset1_bg" class="preset1" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset1_text" class="preset1" type="picker" default="#656565" label="Text Color" />
+                <field name="preset1_link" class="preset1" type="picker" default="#27ae60" label="Link Color" />
+                <field name="preset1_major" class="preset1" type="picker" default="#27ae60" label="Major Color" />
+                <field name="preset1_minor" class="preset1" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset1_module" class="preset1" type="picker" default="#ffffff" label="module Color" />
+				<!--End Preset1-->
+
+                <!--Start Preset2-->
+                <field name="preset2_bg" class="preset2" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset2_text" class="preset2" type="picker" default="#656565" label="Text Color" />
+                <field name="preset2_link" class="preset2" type="picker" default="#c0392b" label="Link Color" />
+                <field name="preset2_major" class="preset2" type="picker" default="#c0392b" label="Major Color" />
+                <field name="preset2_minor" class="preset2" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset2_module" class="preset2" type="picker" default="#ffffff" label="module Color" />
+                <!--End Preset2-->
+
+                <!--Start Preset3-->
+                <field name="preset3_bg" class="preset3" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset3_text" class="preset3" type="picker" default="#656565" label="Text Color" />
+                <field name="preset3_link" class="preset3" type="picker" default="#2980b9" label="Link Color" />
+                <field name="preset3_major" class="preset3" type="picker" default="#2980b9" label="Major Color" />
+                <field name="preset3_minor" class="preset3" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset3_module" class="preset3" type="picker" default="#ffffff" label="module Color" />
+                <!--End Preset3-->
+
+                <!--Start Preset4-->
+                <field name="preset4_bg" class="preset4" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset4_text" class="preset4" type="picker" default="#656565" label="Text Color" />
+                <field name="preset4_link" class="preset4" type="picker" default="#34495e" label="Link Color" />
+                <field name="preset4_major" class="preset4" type="picker" default="#34495e" label="Major Color" />
+                <field name="preset4_minor" class="preset4" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset4_module" class="preset4" type="picker" default="#ffffff" label="module Color" />
+                <!--End Preset4-->
+
+                <!--Start Preset5-->
+                <field name="preset5_bg" class="preset5" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset5_text" class="preset5" type="picker" default="#656565" label="Text Color" />
+                <field name="preset5_link" class="preset5" type="picker" default="#f39c12" label="Link Color" />
+                <field name="preset5_major" class="preset5" type="picker" default="#f39c12" label="Major Color" />
+                <field name="preset5_minor" class="preset5" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset5_module" class="preset5" type="picker" default="#ffffff" label="module Color" />
+                <!--End Preset5-->
+
+                <!--Start Preset6-->
+                <field name="preset6_bg" class="preset6" type="picker" default="#f0ece1" label="Background Color" />
+                <field name="preset6_text" class="preset6" type="picker" default="#656565" label="Text Color" />
+                <field name="preset6_link" class="preset6" type="picker" default="#8e44ad" label="Link Color" />
+                <field name="preset6_major" class="preset6" type="picker" default="#8e44ad" label="Major Color" />
+                <field name="preset6_minor" class="preset6" type="picker" default="#363948" label="Minor Color" />
+                <field name="preset6_module" class="preset6" type="picker" default="#ffffff" label="module Color" />
+                <!--End Preset6-->                                                
+				
+
+                                           
+
+            </fieldset>
+			<!--End Preset-->
+			
+            <fieldset name="layout" addfieldpath="/plugins/system/helix/fields">
+                <field type="layout" name="layout" />
+            </fieldset>
+          <!--End Layout-->	
+
+            <!--Start Menu Tab-->
+            <fieldset name="menu">
+
+                <field type="group" title="Select Menu" />
+                <field name="menu" type="menu" default="mainmenu" label="" />
+                <field type="group" title="Menu Settings" />
+
+                <field name="menutype" type="list" default="mega" label="MENU_TYPE">
+                    <option value="mega">Mega Menu</option>
+                    <option value="drop">Dropline Menu</option>
+                    <option value="split">Split Menu</option>
+                </field>
+
+                <field name="menu_col_width" type="text" default="200" label="DROP_COL_WIDTH" />
+                <field name="show_menu_image" class="parent menuimage" type="radio" default="1" label="SHOW_MENU_IMAGE">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field name="menu_image_position" class="child menuimage menuimage_1" type="radio" default="1" label="MENU_IMAGE_POSITION">
+                    <option value="0">Background Image</option>
+                    <option value="1">Image Source</option>
+                </field>
+
+                <field name="submenu_position" type="list" default="0" label="Submenu Position">
+                    <option value="0">Default</option>
+                    <option value="1">Center</option>
+                </field>
+
+				<field type="group" title="Menu Offsets" />
+                <field name="init_x" type="text" default="0" label="X_OFFSET1" />
+                <field name="init_y" type="text" default="0" label="Y_OFFSET1" />
+                <field name="sub_x" type="text" default="0" label="X_OFFSET2" />
+                <field name="sub_y" type="text" default="0" label="Y_OFFSET2" />
+            </fieldset>
+            <!--End Menu Tab-->
+
+            <!--Start Font Tab-->
+            <fieldset name="fonts">
+                <field type="group" title="Body Font" />
+					<field name="body_font" type="text" default="Lato" label="BODY_FONT" />
+					<field name="body_selectors" type="textarea" rows="6" cols="30" label="SELECTORS" />
+                <field type="group" title="Header Font" />
+					<field name="header_font" type="text" default="Lato" label="HEADER_FONT" />
+					<field name="header_selectors" type="textarea" default="" rows="6" cols="30" label="SELECTORS" />
+                <field type="group" title="Others Font"  />
+					<field name="other_font" type="text" default="Lato" label="OTHER_FONT" />
+					<field name="other_selectors" type="textarea" rows="6" cols="30" label="SELECTORS" />
+            </fieldset>
+            <!--End Font Tab-->
+
+            <!--Start Advanced Tab-->
+            <fieldset name="advanced">
+                <field type="group" title="CACHE_SETTINGS" />
+                <field name="cache_time" size="40" type="text" default="60" label="CACHE_TIME" />
+                <field name="compress_css" type="radio" default="0" label="CSS_COMPRESS">
+                    <option value="0">Disable</option>
+                    <option value="1">Enable</option>
+                </field>
+                <field name="compress_js" type="radio" default="0" label="JS_COMPRESS">
+                    <option value="0">Disable</option>
+                    <option value="1">Enable</option>
+                </field>
+                <field type="group" title="LINE_GA" />
+                <field name="enable_ga" class="parent analytics" type="radio" default="0" label="Enable">
+                    <option value="0">No</option>
+                    <option value="1">YES</option>
+                </field>
+                <field name="ga_code" class="child analytics analytics_1" type="text" default="" label="GA_CODE" />
+				
+                <field type="group" title="LOAD_JQUERY" />
+                <field name="loadjquery" class="parent loadjquery" type="radio" default="0" label="FORCE_LOAD">
+                    <option value="0">No</option>
+                    <option value="1">YES</option>
+                </field>
+				
+				<field name="loadfromcdn" class="child loadjquery loadjquery_1" type="radio" default="0" label="USE_CDN">
+                    <option value="0">No</option>
+                    <option value="1">YES</option>
+                </field>
+				
+				<field type="group" title="LESS" />
+				 <field name="lessoption" class="" type="radio" default="1" label="Enable">
+                    <option value="0">No</option>
+                    <option value="1">YES</option>
+                </field>
+				
+				<field type="group" title="COMPONENT_AREA" />
+				<field name="hide_component_area" class="" type="radio" default="0" label="HIDE_FRONTPAGE">				
+                    <option value="0">No</option>
+                    <option value="1">YES</option>
+                </field>
+                <!--End Advanced Tab-->
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
